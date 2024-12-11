@@ -64,7 +64,7 @@ open class DTImageScrollView: UIView, UIScrollViewDelegate {
             imageView.clipsToBounds = true
             imageView.translatesAutoresizingMaskIntoConstraints = false
             imageView.image = self.datasource!.placeholderImageFor(index: index)
-            imageView.af_setImage(withURL: self.datasource!.imageURL(index: index))
+            imageView.af.setImage(withURL: self.datasource!.imageURL(index: index))
             self.scrollView.addSubview(imageView)
             self.imageViews.append(imageView)
             
